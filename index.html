@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>validation</title>
+        <script src="./script/jquery-3.2.1.min.js"></script>
+    </head>
+    
+    <body>
+        <form action="./abc.html" class="form">
+	       <p>(*) 항목은 반드시 입력해 주세요.</p>
+            <ul>
+                <li>
+                    <label for="uid">ID(*):</label>
+                    <input id="uid" />
+                    <strong>영문, 숫자, 언더스코어(_), 하이픈(-)이 포함된 3~16 문자.</strong>
+                </li>
+                <li>
+                    <label for="upw">PW(*):</label>
+                    <input id="upw" type="password" />
+                    <strong>영문, 숫자, 언더스코어(_), 하이픈(-)이 포함된 6~18 문자.</strong>
+                </li>
+                <li>
+                    <label for="mail">Email(*):</label>
+                    <input id="mail" value="@" />
+                </li>
+                <li>
+                    <label for="url">Web(*):</label>
+                    <input id="url" value="http://" />
+                </li>
+                <li>
+                    <label for="tel">Tel(*):</label>
+                    <input id="tel" />
+                    하이픈(-)은 입력하지 마세요.
+                </li>
+	       </ul>
+	<input type="submit" value="전송" />
+</form>
+        
+        <script src="./script/script.js"></script>
+    </body>
+</html>
